@@ -1,0 +1,21 @@
+.Banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+.title-banner {
+    color: white;
+    position: absolute;
+    z-index: 1 ;
+}
+
+.Kasa-banner {
+    width: 100%;
+    border-radius: 25px;
+    height: 170px;
+    object-fit: cover;
+    filter:brightness(65%)
+
+}

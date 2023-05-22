@@ -1,0 +1,32 @@
+.Nav-conteneur {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.kasa-logo {
+    width: 10rem; 
+}
+
+.conteneur-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.conteneur-link a {
+    padding: .2rem .7rem;
+    text-decoration: none;
+    color: #ff5656;
+}
+.conteneur-link a:hover {
+    text-decoration : underline;
+}
+.conteneur-link a.active {
+    text-decoration: underline;
+}
+
+.conteneur-link a:visited {
+    color: #ff5656
+}
