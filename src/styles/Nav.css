@@ -2,11 +2,12 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 
 }
 
 .kasa-logo {
-    width: 10rem; 
+    width: 11rem; 
 }
 
 .conteneur-link {
@@ -19,6 +20,7 @@
     padding: .2rem .7rem;
     text-decoration: none;
     color: #ff5656;
+    font-size: 20px; 
 }
 .conteneur-link a:hover {
     text-decoration : underline;

@@ -1,0 +1,73 @@
+* {
+    color: #ff6060
+}
+
+.title_location {
+    font-size: 36px;
+    margin: 0;
+}
+
+.lieu_location {
+    margin: .2rem 0 1rem;    
+    font-size: 16px;
+}
+
+.conteneur_tags {
+    display: flex;
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+.location_tag {
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    padding: 0.2rem 4rem;
+}
+
+.conteneur_title_et_proprietaire {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.proprietaire {
+display: flex;
+align-items: center;
+}
+
+.proprietaire h3 {
+    font-size: 18px;
+    width: 110px;
+}
+
+.badge_proprietaire {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+}
+
+.location_etoiles {
+    display: flex;
+    gap: 15px; 
+    font-size: 24px;
+}
+
+.conteneur_description {
+    width: 50%; 
+    height: 52px;
+    background-color: #ff6060;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    margin-block: 0;
+}
+
+.location_description {
+    color: white; 
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+}
+
+

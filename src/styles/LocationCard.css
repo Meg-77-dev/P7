@@ -1,0 +1,19 @@
+.location_list {
+    list-style-type: none;
+}
+
+.location {
+    display: flex;
+    align-items: end;
+}
+
+.cover_location {
+    width: 363px;
+    height: 363px; 
+    border-radius: 10px; 
+}
+
+.location_title {
+    position: absolute;
+    font-size: 18px; 
+}

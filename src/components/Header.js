@@ -1,13 +1,13 @@
 import Nav from './Nav'
 import HomeBanner from './Banner'
-import HomeLocationList from './HomeLocationList';
+import LocationGrid from './LocationGrid';
 
 function App() {
   return (
     <>
     <Nav/>
     <HomeBanner/>
-    <HomeLocationList/>
+    <LocationGrid/>
     </>
   );
 }

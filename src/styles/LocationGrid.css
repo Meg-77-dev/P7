@@ -1,0 +1,13 @@
+.conteneur-Locations {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 1240px;
+    border-radius: 25px;
+    margin-top: 43px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 56px;
+    
+    }
