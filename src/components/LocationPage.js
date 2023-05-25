@@ -1,15 +1,22 @@
 import React from 'react'
 import Nav from './Nav'
 import '../styles/LocationPage.css'
+import locationList from '../datas/locationList.json'
+import { useParams } from 'react-router-dom'
 
 function LocationPage() {
+
+    //Recherche de l'id 
+    const id = useParams();
+    const logement = locationList.find( element =>element.id === id);
+    console.log(logement);
+
     return (
-        <>
+        <div className='LocationPage'>
             <Nav/>
             <div className='conteneur_title_et_proprietaire'>
                 <div className='conteneur_title-lieu_tags'>
-                <h1 className='title_location'>
-                    Titre de la location
+                <h1 className='title_location'>{logement.title}
                 </h1>
                 <h3 className='lieu_location'>
                  Lieu de la location
@@ -38,7 +45,7 @@ function LocationPage() {
             <h2 className='location_description'>Description</h2>
             <i class="fa-solid fa-angle-down"></i>
             </div>
-        </>
+        </div>
         )
 }
 
