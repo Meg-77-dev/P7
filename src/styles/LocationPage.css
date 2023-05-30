@@ -1,11 +1,13 @@
 .title_location {
     font-size: 36px;
+    color: #ff6060;
     margin: 0;
 }
 
 .lieu_location {
     margin: .2rem 0 1rem;    
     font-size: 16px;
+    color: #ff6060;
 }
 
 .conteneur_tags {
@@ -30,18 +32,20 @@
 .proprietaire {
 display: flex;
 align-items: center;
+gap: 10px; 
 }
 
 .proprietaire h3 {
     font-size: 18px;
     width: 110px;
+    text-align: right;
+    color: #ff6060;
 }
 
 .badge_proprietaire {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background-color: #c4c4c4;
 }
 
 .location_etoiles {
@@ -50,20 +54,49 @@ align-items: center;
     font-size: 24px;
 }
 
-.conteneur_description {
-    width: 50%; 
-    height: 52px;
+.etoile_rouge {
+    color: #ff6060;
+}
+
+.etoile_grise {
+ color: #E3E3E3;
+}
+
+.conteneur_location_collapses {
+display: flex;
+justify-content: space-between;
+width: 100%
+}
+
+.location_collapses_content {
+    margin: 15px 0;
+    width: 45%;
+}
+
+.collapses_description {
+    align-items: center;
     background-color: #ff6060;
     border-radius: 10px;
-    font-size: 18px;
+    color: white;
+    cursor: pointer;
     display: flex;
-    margin-block: 0;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.location_description {
-    color: white; 
-    margin-top: 0.6rem;
-    margin-left: 0.6rem;
-}
+.collapses_descrip_equip {
+    font-size: 18px;
+    margin: 0;
+    padding: 14px 10px;
+  }
 
+  .collapses_description i {
+    font-size: 20px;
+    color: white;
+    padding: 14px 15px;
+  }
 
+  .descrip_equip {
+    list-style-type: none;
+    color: #ff6060;
+  }

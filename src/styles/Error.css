@@ -1,0 +1,21 @@
+.erreur {
+font-size: 288px;
+margin-bottom: 0;
+margin-top: 125px; 
+color: #ff6060;
+    text-align: center;
+}
+
+.oups {
+    margin-bottom: 130px;
+    color: #ff6060;
+    text-align: center;
+}
+
+.retourAccueil {
+    text-decoration: underline;
+    margin-bottom: 130px;
+    color: #ff6060;
+    text-align: center;
+}
+
