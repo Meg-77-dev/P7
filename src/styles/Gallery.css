@@ -19,13 +19,13 @@
 .arrow_left i {
     position: absolute;
     left: 3%;
-    top: 50%;
+    top: 40%;
 }
 
 .arrow_right {
     position: absolute;
     right: 3%;
-    top: 50%; 
+    top: 40%; 
 }
 
 .counter {

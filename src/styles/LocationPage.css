@@ -1,11 +1,11 @@
 .title_location {
     font-size: 36px;
     color: #ff6060;
-    margin: 0;
+    margin: 0px;
 }
 
 .lieu_location {
-    margin: .2rem 0 1rem;    
+    margin: 3px 0px 16px;    
     font-size: 16px;
     color: #ff6060;
 }
@@ -20,7 +20,7 @@
     background-color: #ff6060;
     color: white;
     border-radius: 10px;
-    padding: 0.2rem 4rem;
+    padding: 3px 64px;
 }
 
 .conteneur_title_et_proprietaire {
@@ -69,8 +69,9 @@ width: 100%
 }
 
 .location_collapses_content {
-    margin: 15px 0;
+    margin: 15px 0px;
     width: 45%;
+    text-align: justify;
 }
 
 .collapses_description {
@@ -78,15 +79,15 @@ width: 100%
     background-color: #ff6060;
     border-radius: 10px;
     color: white;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    z-index: 1;
 }
 
 .collapses_descrip_equip {
     font-size: 18px;
-    margin: 0;
+    margin: 0px;
     padding: 14px 10px;
   }
 
@@ -94,9 +95,17 @@ width: 100%
     font-size: 20px;
     color: white;
     padding: 14px 15px;
+    cursor: pointer;
   }
 
   .descrip_equip {
     list-style-type: none;
     color: #ff6060;
+    background-color: #f6f6f6;
+    margin-top: -22px; 
+    z-index: -1;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px 20px 20px 20px;
+    height: 120px;
   }

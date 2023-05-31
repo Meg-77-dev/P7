@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/LocationPage.css'
 import locationList from '../datas/locationList.json'
 import Gallery from './Gallery'
-import Footer from './Footer'
+import Collapse from './Collapse'
 import { useParams } from 'react-router-dom'
 
 function LocationPage() {
@@ -10,12 +10,11 @@ function LocationPage() {
     let { id } = useParams()
     const logement = locationList.find((logement) => logement.id === id);
     const { title, location, pictures, tags, host, rating, description, equipments } = logement;
-    const range = [1, 2, 3, 4, 5];
+    const stars = [1, 2, 3, 4, 5];
 
     return (
         <>
             <Gallery pictures={logement.pictures} />
-            <section>
                 <div className='conteneur_title_et_proprietaire'>
                     <div className='conteneur_title-lieu_tags'>
                         <h1 className='title_location'>{logement.title}
@@ -39,32 +38,26 @@ function LocationPage() {
                             <img src={logement.host.picture} className='badge_proprietaire'></img>
                         </div>
                         <div className='location_etoiles'>
-                            <span className='etoile_rouge'><i class="fa-solid fa-star"></i></span>
-                            <span className='etoile-grise' ><i class="fa-solid fa-star"></i></span>
+                            {stars.map((star => 
+                            rating >= star ? (
+                                <span className='etoile_rouge' key={star.toString()}><i class="fa-solid fa-star"></i></span>
+                            ) : (
+                                <span className='etoile-grise' key={star.toString()} ><i class="fa-solid fa-star"></i></span>
+                            )
+                                
+                            ))}
+                        
                         </div>
                     </div>
                 </div>
                 <div className='conteneur_location_collapses'>
-                    <div className='location_collapses_content'>
-                        <div className='collapses_description'>
-                            <h2 className='collapses_descrip_equip'>Description</h2>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <p className='descrip_equip'>{logement.description}</p>
-                    </div>
-                    <div className='location_collapses_content'>
-                        <div className='collapses_description'>
-                            <h2 className='collapses_descrip_equip'>Équipements</h2>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <ul className='descrip_equip'>
-                            {logement.equipments.map((equipments, i) =>
-                                (<li key={i}>{equipments}</li>))}
-                        </ul>
-                    </div>
+                    <Collapse 
+                    title= 'Description' 
+                    content={logement.description} />
+                    <Collapse title='Équipements'
+                    content ={logement.equipments} content={logement.equipments.map((equipments, i) =>
+                                (<li key={i}>{equipments}</li>))} />
                 </div>
-            </section>
-            <Footer />
         </>
     )
 }

@@ -31,6 +31,7 @@ root.render(
         <Route path="/location/:id" element={<LocationPage/>}/>
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer/>
     </Router>
   </React.StrictMode>
 );
