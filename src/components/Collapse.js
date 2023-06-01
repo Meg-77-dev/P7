@@ -11,7 +11,7 @@ function Collapse(props) {
         <div className='location_collapses_content'>
         <div className='collapses_description'>
         <h2 className='collapses_descrip_equip'>{props.title}</h2>
-        {!isOpen ? <i onClick={dropdown} class="fa-solid fa-angle-down" ></i> :<i onClick={dropdown} class="fa-solid fa-angle-up"></i>}
+        {!isOpen ? <i onClick={dropdown} className="fa-solid fa-angle-down" ></i> :<i onClick={dropdown} className="fa-solid fa-angle-up"></i>}
         </div>
         {isOpen && <p className='descrip_equip'>{props.content}</p>}
         </div>

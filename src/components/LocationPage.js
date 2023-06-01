@@ -40,9 +40,9 @@ function LocationPage() {
                         <div className='location_etoiles'>
                             {stars.map((star => 
                             rating >= star ? (
-                                <span className='etoile_rouge' key={star.toString()}><i class="fa-solid fa-star"></i></span>
+                                <span className='etoile_rouge' key={star.toString()}><i className="fa-solid fa-star"></i></span>
                             ) : (
-                                <span className='etoile-grise' key={star.toString()} ><i class="fa-solid fa-star"></i></span>
+                                <span className='etoile-grise' key={star.toString()} ><i className="fa-solid fa-star"></i></span>
                             )
                                 
                             ))}

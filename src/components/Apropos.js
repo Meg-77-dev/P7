@@ -13,22 +13,22 @@ function Apropos(props) {
             </div>
             <div className='conteneur_apropos'>
             {aproposdata.map((apropos)=> 
-            <Collapse title= 'Fiabilité' 
+            <Collapse key='1' title= 'Fiabilité' 
             content={apropos.fiabilité} /> )}
             </div>
             <div className='conteneur_apropos'>
              {aproposdata.map((apropos)=> 
-            <Collapse title= 'Respect' 
+            <Collapse key='2' title= 'Respect' 
             content={apropos.respect} /> )}
             </div>
             <div className='conteneur_apropos'>
              {aproposdata.map((apropos)=> 
-            <Collapse title= 'Service' 
+            <Collapse key='3' title= 'Service' 
             content={apropos.service} /> )}
             </div>
             <div className='conteneur_apropos'>
              {aproposdata.map((apropos)=> 
-            <Collapse title= 'Sécurité' 
+            <Collapse key='4' title= 'Sécurité' 
             content={apropos.sécurité} /> )}
             </div>
         

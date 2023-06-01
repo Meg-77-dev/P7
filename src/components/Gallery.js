@@ -37,10 +37,10 @@ function Caroussel(props) {
                     <img src={Image} alt="une photo du logement" className="image_caroussel" key={ImageLocation} />
                     <div className="fleches">
                         <div className="arrow_left" onClick={() => backImageLocation()}>
-                            <i class="fa-solid fa-angle-left"></i>
+                            <i className="fa-solid fa-angle-left"></i>
                         </div>
                         <div className="arrow_right" onClick={() => nextImageLocation()}>
-                            <i class="fa-solid fa-angle-right"></i>
+                            <i className="fa-solid fa-angle-right"></i>
                         </div>
                     </div>
                     <div className="counter">{ImageLocation + 1}/{pictures.length}</div>
