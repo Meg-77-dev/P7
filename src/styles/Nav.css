@@ -2,6 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
     margin-bottom: 30px;
 
 }
@@ -31,4 +32,11 @@
 
 .conteneur-link a:visited {
     color: #ff5656
+}
+
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+.conteneur-link {
+    text-transform: uppercase;
+}
 }

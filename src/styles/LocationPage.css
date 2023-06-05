@@ -42,6 +42,12 @@ gap: 10px;
     color: #ff6060;
 }
 
+.conteneur_proprietaire_etoiles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .badge_proprietaire {
     width: 64px;
     height: 64px;
@@ -107,5 +113,57 @@ width: 100%
     position: relative;
     border-radius: 0px 0px 10px 10px;
     padding: 30px 20px 20px 20px;
-    height: 120px;
+    height: 185px;
   }
+
+  .apropos_page .location_collapses_content {
+    width: 80%;
+  }
+
+  .banner_a_propos {
+    width: 100%;
+    border-radius: 25px;
+    height: 170px;
+    object-fit: cover;
+    filter:brightness(65%);
+    margin-bottom: 30px; 
+}
+.conteneur_apropos {
+    display: flex;
+    justify-content: center;
+}
+
+.apropos_page .descrip_equip {
+    height: 150px;
+}
+
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+    .banner_a_propos {
+        height: 330px;
+    }
+
+    .conteneur_title_et_proprietaire {
+        flex-direction: column;
+        justify-content: none;
+        gap: 16px;
+    }
+
+    .conteneur_proprietaire_etoiles {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .location_etoiles {
+        margin-top: 25px;
+    }
+
+    .conteneur_location_collapses {
+        flex-direction: column;
+    }
+
+    .location_collapses_content {
+        width: 100%;
+    }
+}

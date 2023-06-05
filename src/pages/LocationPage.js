@@ -1,16 +1,23 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom'
+import Error from './Error'
 import '../styles/LocationPage.css'
 import locationList from '../datas/locationList.json'
-import Gallery from './Gallery'
-import Collapse from './Collapse'
+import Gallery from '../components/Gallery'
+import Collapse from '../components/Collapse'
+
 import { useParams } from 'react-router-dom'
 
 function LocationPage() {
 
     let { id } = useParams()
     const logement = locationList.find((logement) => logement.id === id);
+    if(logement === undefined) {
+        return <Error />;
+    }
     const { title, location, pictures, tags, host, rating, description, equipments } = logement;
     const stars = [1, 2, 3, 4, 5];
+
 
     return (
         <>
@@ -55,11 +62,12 @@ function LocationPage() {
                     title= 'Description' 
                     content={logement.description} />
                     <Collapse title='Équipements'
-                    content ={logement.equipments} content={logement.equipments.map((equipments, i) =>
+                    equipments ={logement.equipments} content={logement.equipments.map((equipments, i) =>
                                 (<li key={i}>{equipments}</li>))} />
                 </div>
         </>
     )
 }
+
 
 export default LocationPage

@@ -1,16 +1,17 @@
 import banner from '../assets/banniere-a-propos.jpg'
-import Collapse from './Collapse'
+import Collapse from '../components/Collapse'
 import aproposdata from '../datas/aproposdata.json'
-import '../styles/Apropos.css'
+import '../styles/LocationPage.css'
 
 
 
 function Apropos(props) {
     return (
-        <>
+        <div className='apropos_page'>
             <div className="Banner_a_propos">
                 <img className='banner_a_propos' src={banner} alt="bannière à propos" />
             </div>
+            <div className='conteneur_apropos_global'>
             <div className='conteneur_apropos'>
             {aproposdata.map((apropos)=> 
             <Collapse key='1' title= 'Fiabilité' 
@@ -31,8 +32,8 @@ function Apropos(props) {
             <Collapse key='4' title= 'Sécurité' 
             content={apropos.sécurité} /> )}
             </div>
-        
-        </>
+        </div>
+        </div>
     )
 }
 

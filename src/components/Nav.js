@@ -8,7 +8,7 @@ function Nav(){
         <img src={logoKasa} alt="logo kasa" className='kasa-logo'/>
         <ul className='conteneur-link'>
             <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/Apropos">A propos</NavLink>
+            <NavLink to="/Apropos">À propos</NavLink>
         </ul>
     </div>
     )

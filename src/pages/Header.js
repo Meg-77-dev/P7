@@ -1,6 +1,5 @@
-import HomeBanner from './Banner'
-import LocationGrid from './LocationGrid'
-import Footer from './Footer'
+import HomeBanner from '../components/Banner'
+import LocationGrid from '../components/LocationGrid'
 
 function App() {
   return (

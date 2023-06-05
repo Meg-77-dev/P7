@@ -21,5 +21,15 @@
     position: absolute;
     font-size: 18px; 
     margin-left: 10px; 
+    margin-bottom: 10px;
     color: white; 
+    text-shadow: 1px 1px 1px black;
+}
+
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+    .cover_location {
+        width: 670px;
+        height: 500px;
+    }
 }

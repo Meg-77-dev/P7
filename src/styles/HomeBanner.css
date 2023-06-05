@@ -18,3 +18,13 @@
     filter:brightness(65%)
 
 }
+
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+    .Banner {
+        justify-content: none;
+    }
+    .title-banner {
+        left: 8%; 
+    }
+}

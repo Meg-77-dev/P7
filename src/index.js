@@ -1,29 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-import App from './components/Header';
+import './styles/index.css'
+import App from './pages/Header';
 import Nav from'./components/Nav';
 import Footer from './components/Footer'
-import Apropos from './components/Apropos'
-import LocationPage from './components/LocationPage';
-import Error from './components/Error'
-import { createGlobalStyle } from 'styled-components';
+import Apropos from './pages/Apropos'
+import LocationPage from './pages/LocationPage';
+import Error from './pages/Error'
 
-const GlobalStyle = createGlobalStyle`
-* {
-    font-family: Montserrat; 
-}
-body {
-  padding-left: 100px; 
-  padding-right: 100px; 
-}
-`
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <GlobalStyle/>
       <Nav/>
       <Routes>
         <Route path="/" element={<App />} />

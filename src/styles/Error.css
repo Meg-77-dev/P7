@@ -19,3 +19,12 @@ color: #ff6060;
     text-align: center;
 }
 
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+    .erreur {
+        font-size: 228px;
+    }
+    .oups {
+        font-size: 18px;
+    }
+}

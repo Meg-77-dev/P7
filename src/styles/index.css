@@ -1,0 +1,16 @@
+* {
+    font-family: Montserrat; 
+    margin-bottom: 0;
+}
+body {
+  padding-left: 100px; 
+  padding-right: 100px; 
+}
+
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+  body {
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+}

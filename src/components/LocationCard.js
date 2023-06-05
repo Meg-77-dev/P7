@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import '../styles/LocationCard.css'
 
 function LocationCard(props) {
+	
 	return (
 		<Link to={`/location/${props.id}`}>
 			<li key={props.id} className='location'>
