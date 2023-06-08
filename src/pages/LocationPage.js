@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navigate } from 'react-router-dom'
 import Error from './Error'
 import '../styles/LocationPage.css'
 import locationList from '../datas/locationList.json'
@@ -12,6 +11,7 @@ function LocationPage() {
 
     let { id } = useParams()
     const logement = locationList.find((logement) => logement.id === id);
+    //si le logement est indéfini redirection vers la page erreur 
     if(logement === undefined) {
         return <Error />;
     }

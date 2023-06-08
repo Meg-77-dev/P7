@@ -11,6 +11,7 @@
 }
 
 .cover_location {
+    object-fit: cover;
     width: 350px;
     height: 363px; 
     border-radius: 10px; 
@@ -29,7 +30,7 @@
 /*Version mobile*/
 @media screen and (max-width: 767px) {
     .cover_location {
-        width: 670px;
+        width: 100%;
         height: 500px;
     }
 }

@@ -5,7 +5,7 @@ import '../styles/LocationPage.css'
 
 
 
-function Apropos(props) {
+function Apropos() {
     return (
         <div className='apropos_page'>
             <div className="Banner_a_propos">
