@@ -19,6 +19,11 @@ color: #ff6060;
     text-align: center;
 }
 
+.conteneur_error {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Version mobile*/
 @media screen and (max-width: 767px) {
     .erreur {

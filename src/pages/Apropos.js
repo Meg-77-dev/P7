@@ -13,28 +13,17 @@ function Apropos() {
             </div>
             <div className='conteneur_apropos_global'>
             <div className='conteneur_apropos'>
-            {aproposdata.map((apropos)=> 
-            <Collapse key='1' title= 'Fiabilité' 
-            content={apropos.fiabilité} /> )}
-            </div>
-            <div className='conteneur_apropos'>
-             {aproposdata.map((apropos)=> 
-            <Collapse key='2' title= 'Respect' 
-            content={apropos.respect} /> )}
-            </div>
-            <div className='conteneur_apropos'>
-             {aproposdata.map((apropos)=> 
-            <Collapse key='3' title= 'Service' 
-            content={apropos.service} /> )}
-            </div>
-            <div className='conteneur_apropos'>
-             {aproposdata.map((apropos)=> 
-            <Collapse key='4' title= 'Sécurité' 
-            content={apropos.sécurité} /> )}
-            </div>
+            {aproposdata.map(({id, title, content}) => (
+            <Collapse key={id} title={title} content={content} /> ))}
+        </div>
         </div>
         </div>
     )
 }
 
 export default Apropos
+
+/*<Collapse {aproposdata.map((apropos) => 
+    key="id", title="title",
+    content="content"
+    )}*/

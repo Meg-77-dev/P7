@@ -36,11 +36,12 @@ function Caroussel(props) {
         setImage(pictures[backImage])
     }
     //Si il y a plus d'une photo mettre les flèches et le compteur
-    if (pictures.length > 1) {
+
         return (
-            <>
                 <div className="conteneur_caroussel">
                     <img src={Image} alt="une photo du logement" className="image_caroussel" key={ImageLocation} />
+                    {pictures.length > 1 && (
+                        <>
                     <div className="fleches">
                         <div className="arrow_left" onClick={() => backImageLocation()}>
                             <i className="fa-solid fa-angle-left"></i>
@@ -50,20 +51,10 @@ function Caroussel(props) {
                         </div>
                     </div>
                     <div className="counter">{ImageLocation + 1}/{pictures.length}</div>
+                    </>
+                    )}
                 </div>
-            </>
         )
     }
-    //Sinon ne pas ajouter les flèches et le compteur 
-    else {
-        return (
-            <>
-                <div className="conteneur_caroussel">
-                    <img src={Image} alt="une photo du logement" className="image_caroussel" key={ImageLocation} />
-                    </div>
-            </>
-        )
-    }
-}
 
 export default Caroussel

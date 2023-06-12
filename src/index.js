@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import './styles/index.css'
-import Header from './pages/Header';
+import Home from './pages/Home';
 import Nav from'./components/Nav';
 import Footer from './components/Footer'
 import Apropos from './pages/Apropos'
@@ -16,7 +16,7 @@ root.render(
     <Router>
       <Nav/>
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos/>}/>
         <Route path="/location/:id" element={<LocationPage/>}/>
         <Route path="*" element={<Error />} />

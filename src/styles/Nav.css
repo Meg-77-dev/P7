@@ -36,7 +36,13 @@
 
 /*Version mobile*/
 @media screen and (max-width: 767px) {
+.kasa-logo {
+    width: 7rem;
+}
 .conteneur-link {
     text-transform: uppercase;
+}
+.conteneur-link a  {
+    font-size: 17px;
 }
 }

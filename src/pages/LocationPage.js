@@ -21,13 +21,13 @@ function LocationPage() {
 
     return (
         <>
-            <Gallery pictures={logement.pictures} />
+            <Gallery pictures={pictures} />
                 <div className='conteneur_title_et_proprietaire'>
                     <div className='conteneur_title-lieu_tags'>
-                        <h1 className='title_location'>{logement.title}
+                        <h1 className='title_location'>{title}
                         </h1>
                         <h3 className='lieu_location'>
-                            {logement.location}
+                            {location}
                         </h3>
                         <span className='conteneur_tags'>
                             {tags.map((tag) => {
@@ -41,8 +41,8 @@ function LocationPage() {
                     </div>
                     <div className='conteneur_proprietaire_etoiles'>
                         <div className='proprietaire'>
-                            <h3>{logement.host.name}</h3>
-                            <img src={logement.host.picture} className='badge_proprietaire'></img>
+                            <h3>{host.name}</h3>
+                            <img src={host.picture} className='badge_proprietaire'></img>
                         </div>
                         <div className='location_etoiles'>
                             {stars.map((star => 
@@ -60,9 +60,9 @@ function LocationPage() {
                 <div className='conteneur_location_collapses'>
                     <Collapse 
                     title= 'Description' 
-                    content={logement.description} />
+                    content={description} />
                     <Collapse title='Équipements'
-                    equipments ={logement.equipments} content={logement.equipments.map((equipments, i) =>
+                     content={equipments.map((equipments, i) =>
                                 (<li key={i}>{equipments}</li>))} />
                 </div>
         </>

@@ -116,7 +116,7 @@ width: 100%
   }
 
   .apropos_page .location_collapses_content {
-    width: 80%;
+    width: 100%;
   }
 
   .banner_a_propos {
@@ -127,9 +127,17 @@ width: 100%
     filter:brightness(65%);
     margin-bottom: 30px; 
 }
-.conteneur_apropos {
+
+.conteneur_apropos_global {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+.conteneur_apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
 }
 
 /*Version mobile*/
@@ -159,6 +167,10 @@ width: 100%
     }
 
     .location_collapses_content {
+        width: 100%;
+    }
+
+    .conteneur_apropos {
         width: 100%;
     }
 }

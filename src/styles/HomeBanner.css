@@ -25,6 +25,6 @@
         justify-content: none;
     }
     .title-banner {
-        left: 8%; 
+        width: 50%;
     }
 }
