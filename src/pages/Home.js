@@ -1,13 +1,14 @@
+import Imagebanner from '../assets/banniere.jpg'
 import HomeBanner from '../components/Banner'
 import LocationGrid from '../components/LocationGrid'
 
-function Header() {
+function Home() {
   return (
     <>
-    <HomeBanner/>
+    <HomeBanner sourceImage={Imagebanner} textImage="Chez vous, partout et ailleurs"/>
     <LocationGrid/>
     </>
   );
 }
 
-export default Header;
+export default Home;

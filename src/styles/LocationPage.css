@@ -119,15 +119,6 @@ width: 100%
     width: 100%;
   }
 
-  .banner_a_propos {
-    width: 100%;
-    border-radius: 25px;
-    height: 170px;
-    object-fit: cover;
-    filter:brightness(65%);
-    margin-bottom: 30px; 
-}
-
 .conteneur_apropos_global {
     width: 100%;
     display: flex;
@@ -142,9 +133,6 @@ width: 100%
 
 /*Version mobile*/
 @media screen and (max-width: 767px) {
-    .banner_a_propos {
-        height: 330px;
-    }
 
     .conteneur_title_et_proprietaire {
         flex-direction: column;
