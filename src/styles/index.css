@@ -3,6 +3,7 @@
     margin-bottom: 0;
 }
 body {
+  max-width: 100%;
   padding-left: 100px; 
   padding-right: 100px; 
 }
@@ -12,5 +13,8 @@ body {
   body {
   padding-left: 20px;
   padding-right: 20px; 
+}
+#root {
+  padding: 5px; 
 }
 }
